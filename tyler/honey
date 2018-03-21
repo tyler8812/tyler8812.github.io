@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            width: 60%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: center;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+    <title>My week schedule.</title>
+</head>
+<body>
+    <ul>
+        <li contenteditable="true">姓名:謝宜庭</li>
+        <li contenteditable="true">學號:我愛陳奕辰</li>
+        <li contenteditable="true">系級:護理xxx</li>
+    </ul>
+
+
+
+
+    <table>
+        <h1>
+            每週課表<h1>
+                <tr>
+                    <th>節數\星期</th>
+                    <th>一</th>
+                    <th>二</th>
+                    <th>三</th>
+                    <th>四</th>
+                    <th>五</th>
+                </tr>
+
+
+                <tr>
+                    <th>0810-0900</th>
+                    <th contenteditable="true">-</th>
+                    <th rowspan="2" contenteditable="true">內外科護理學</th>
+                    <th rowspan="2" contenteditable="true">內外科護理學</th>
+                    <th rowspan="2" contenteditable="true">內外科護理學</th>
+                    <th rowspan="2" contenteditable="true">身體檢查實驗</th>
+                </tr>
+                <tr>
+                    <th>0910-1000</th>
+                    <th contenteditable="true">內外科護理學</th>
+
+
+                </tr>
+                <tr>
+                    <th>1010-1100</th>
+                    <th rowspan="2" contenteditable="true">公民與社會</th>
+                    <th rowspan="2" contenteditable="true">數學</th>
+                    <th rowspan="2" contenteditable="true">分級英文</th>
+                    <th rowspan="2" contenteditable="true">身體檢查評估</th>
+                    <th rowspan="2" contenteditable="true">病理學</th>
+
+                </tr>
+                <tr>
+                    <th>1110-1200</th>
+
+
+                </tr>
+                <tr>
+                    <th>1210-1300</th>
+                    <th contenteditable="true">--------</th>
+                    <th contenteditable="true">-------</th>
+                    <th contenteditable="true">午休</th>
+                    <th contenteditable="true">--------</th>
+                    <th contenteditable="true">--------</th>
+                </tr>
+                <tr>
+                    <th>1310-1400</th>
+                    <th rowspan="2" contenteditable="true">週班會</th>
+                    <th rowspan="2" contenteditable="true">國文</th>
+                    <th rowspan="2" contenteditable="true">想奕辰</th>
+                    <th rowspan="2" contenteditable="true">地理</th>
+                    <th rowspan="4" contenteditable="true">不要討厭我了啦</th>
+                </tr>
+                <tr>
+                    <th>1410-1500</th>
+
+
+                </tr>
+                <tr>
+                    <th>1510-1600</th>
+                    <th rowspan="2" contenteditable="true">聯課活動</th>
+                    <th rowspan="2" contenteditable="true">藥理學</th>
+                    <th rowspan="2" contenteditable="true">體育</th>
+                    <th contenteditable="true">國防通識</th>
+
+                </tr>
+                <tr>
+                    <th>1610-1700</th>
+                    <th contenteditable="true">內外科護理學</th>
+                </tr>
+                <tr>
+                    <th>1510-2200</th>
+                    <th contenteditable="true">回</th>
+                    <th contenteditable="true">家</th>
+                    <th contenteditable="true">找</th>
+                    <th contenteditable="true">哈</th>
+                    <th contenteditable="true">尼</th>
+
+                </tr>
+
+</body>
+</html>
