@@ -1,17 +1,11 @@
 import React from "react";
 import Box from "./Box";
-const style = {
-  border: "4px solid lightblue",
-  borderRadius: "10px",
-  width: "320px",
-  height: "320px",
-  margin: "0 auto",
-  display: "grid",
-  gridTemplate: "repeat(3, 1fr) / repeat(3, 1fr)",
-};
+import "./Layout.css";
+
 function Layout({ boxes, onClick }) {
+  console.log(boxes);
   return (
-    <div style={style}>
+    <div id="layout">
       {boxes.map((box, i) => (
         <Box key={i} value={box} onClick={() => onClick(i)} />
       ))}

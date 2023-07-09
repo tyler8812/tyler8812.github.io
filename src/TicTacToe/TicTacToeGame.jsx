@@ -1,19 +1,21 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Layout from "./Layout";
 import { checkWinner } from "./CheckWinner";
-
-const styles = {
-  width: "200px",
-  margin: "20px auto",
-};
-const pStyle = {
-  color: "green",
-};
+import "./TicTacToeGame.css";
 
 function TicTacToeGame() {
   const [layout, setLayout] = useState(Array(9).fill(null));
   const [xIsNext, setXisNext] = useState(true);
-  const winner = checkWinner(layout);
+  const [winner, setWinner] = useState(null);
+  useEffect(() => {
+    setWinner(checkWinner(layout));
+  }, [layout]);
+
+  const restartGame = () => {
+    setLayout(Array(9).fill(null));
+    setXisNext(true);
+    setWinner(null);
+  };
 
   const handleClick = (i) => {
     const layoutState = [...layout];
@@ -25,12 +27,13 @@ function TicTacToeGame() {
   return (
     <React.Fragment>
       <Layout boxes={layout} onClick={handleClick} />
-      <div style={styles}>
-        <p style={pStyle}>
+      <div>
+        <p>
           {winner
             ? "Winner: " + winner
             : "Next Player " + (xIsNext ? "X" : "O")}
         </p>
+        {winner ? <button onClick={restartGame}>Restart</button> : ""}
       </div>
     </React.Fragment>
   );
